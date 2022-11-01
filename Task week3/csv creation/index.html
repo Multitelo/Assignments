@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 100vw;
+        height: 100vh;
+        background-image: conic-gradient(from -90deg, red, yellow, green);
+      }
+      form {
+        width: 400px;
+        background-color: rgb(153, 204, 226);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 20px;
+      }
+      form > * {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      input {
+        border-radius: 5px;
+        padding: 4px;
+        width: 100%;
+        border: 0.5px solid greenyellow;
+      }
+      form > input[type="submit"] {
+        border: none;
+        width: 40%;
+      }
+      form > div {
+        width: 80%;
+        align-items: center;
+      }
+      input[type="radio"] {
+        width: unset;
+        padding-left: 20px;
+        position: absolute;
+        left: 50px;
+      }
+      .gender > label {
+        padding-left: 50px;
+      }
+      .gender > label:first-child {
+        padding: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="user_data.php" method="post">
+        <div>
+          <h3>Please Fill in the Registration Form Below.</h3>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="fullname"
+            id=""
+            autofocus
+            placeholder="Full Name"
+          />
+        </div>
+        <div>
+          <input type="email" name="email" id="" placeholder="Email Address" />
+        </div>
+        <div>
+          <input type="date" name="date" id="" />
+        </div>
+        <div class="gender">
+          <label><strong>Gender</strong></label
+          ><br />
+          <input type="radio" name="gender" id="" value="Male" />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="" value="Female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="gender" id="" value="Prefer Not To Say" />
+          <label for="Prefer Not To Say">Prefer Not To Say</label><br />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="country"
+            id=""
+            value=""
+            placeholder="Your Country"
+          />
+        </div>
+        <input type="submit" value="Submit Details" />
+      </form>
+    </main>
+  </body>
+</html>

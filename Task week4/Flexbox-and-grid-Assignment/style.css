@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Inter&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex.one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.flex.two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.flex.three {
+  background: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+
+}
+
+.c-img {
+  width: 60px;
+  margin: 20px 0px 0px 30px;
+}
+
+.head {
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 35px;
+  margin: 10px 0px 0px 30px;
+}
+
+.note {
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  max-width: 188px;
+  margin: 20px 30px 50px 30px;
+}
+
+.note.first {
+  margin-bottom: 65px;
+  margin-top: 25px;
+}
+
+.learn-m {
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 22px;
+  padding: 10px 34px 10px 34px;
+  margin: 0px 0px 30px 30px;
+}
+
+
+
+.learn-m.f {
+  color: hsl(31, 77%, 52%);
+}
+
+.learn-m.s {
+  color: hsl(184, 100%, 22%);
+}
+
+.learn-m.t {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-m.f:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.learn-m.s:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.learn-m.t:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+.link-to-grid{
+  text-align: center;
+  margin-top: -90px;
+}
+
+@media(max-width:500px){
+  .c-img{
+    width: 40px;
+    margin: 10px 0px 0px 6px;
+  }
+
+  .head{
+    font-size: 20px;
+    margin: 8px 0px 0px 6px;
+  }
+
+  .note{
+    font-size: 8px;
+    margin: 20px 3px 15px 6px ;
+    width: 100px;
+  }
+
+  .note.first{
+    margin-bottom:19px;
+  }
+
+  .learn-m{
+    padding: 5px 16px 5px 16px;
+    margin: 0px 0px 15px 6px;
+    font-size: 9px;
+  }
+
+  .learn-m.s,.learn-m.t{
+    margin-top: -1px;
+  }
+}

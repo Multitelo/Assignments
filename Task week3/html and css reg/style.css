@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(179, 162, 141, 0.773);
+  position: relative;
+}
+form {
+  width: 80%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+  height: auto;
+  background-color: cornsilk;
+  padding: 2%;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+form > * {
+  margin: 10px;
+}
+label {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+form > h1 {
+  text-align: center;
+  padding: 20px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+form > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 2%;
+}
+form > div > input {
+  margin: 10px 0;
+}
+input {
+  height: 2em;
+  margin: 2%;
+  border-radius: 10px;
+  padding: 0 5px;
+  width: 40%;
+  max-width: 350px;
+}
+input[type="email"]:focus {
+  width: 80%;
+}
+input[type="text"]:focus {
+  width: 50%;
+}
+button {
+  padding: 10px;
+  border-radius: 50%;
+}
+a {
+  color: rgb(20, 216, 216);
+}
+select {
+  border-radius: 10px;
+}

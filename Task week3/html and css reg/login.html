@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="email"]:focus {
+        width: 100%;
+      }
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <form action="success.html">
+        <h1>Login Page</h1>
+        <input
+          type="email"
+          name="uname"
+          id="loge"
+          placeholder="Email Address"
+          required
+        /><br />
+        <input
+          type="password"
+          name="pword"
+          id=""
+          placeholder="Password"
+          required
+        /><br />
+        <input type="submit" value="Submit" />
+        <p>
+          <em
+            ><a href="index.html">Register</a> if you DO NOT have an account
+            yet</em
+          >
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
